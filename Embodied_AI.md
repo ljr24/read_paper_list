@@ -1,27 +1,9 @@
 # 具身智能论文
 
-[返回首页](README.md)
+- **RAX: Scaling Online Exploration for Robot Agents** · arXiv 2026 · [论文](https://arxiv.org/abs/2610.22496) · [项目](https://robot-agent-exploration.com/) · [代码](https://github.com/robot-agent-exploration/rax)
 
-用户确认纳入阅读的两篇论文。具体阅读章节、讨论记录与完成情况暂未补录，以下主题说明来自论文或项目主页，不作为个人阅读结论。
+  让通用 coding agent 直接通过机器人的感知与控制接口编写程序，在在线探索中尝试任务、修正错误，并将成功经验整理成可复用技能。它将感知、规划和控制过程沉淀为可执行程序，探索无需人工示范数据或专门策略训练的机器人任务学习方式。
 
-| 论文 | 会议 / 年份 | 状态 | 主题与后续笔记 |
-| --- | --- | --- | --- |
-| **RAX — Scaling Online Exploration for Robot Agents** | arXiv 预印本，2026；会议归属未核实 | 进度待补充 | Coding agent 通过在线探索生成机器人控制程序，并积累可复用技能。已读章节与个人问题待补充。 |
-| **SuperMimic: Scaling Humanoid Whole-Body Control with One Differentiable World Model** | CoRL 2026（Oral）；另有 arXiv 版本 | 进度待补充 | 通过单一可微 world model 中的短时想象轨迹优化人形机器人全身控制。已读章节与个人问题待补充。 |
+- **SuperMimic: Scaling Humanoid Whole-Body Control with One Differentiable World Model** · CoRL 2026 Oral · [论文](https://arxiv.org/abs/2610.28480) · [项目](https://supermimic.github.io/)
 
-## 论文与资料
-
-### RAX
-
-- [项目主页](https://robot-agent-exploration.com/)
-- [论文：arXiv:2610.22496](https://arxiv.org/abs/2610.22496)
-- [官方代码](https://github.com/robot-agent-exploration/rax)
-- 元数据依据：项目主页的 BibTeX 与 arXiv 条目；奖项未核实，暂不标注。
-
-### SuperMimic
-
-- [项目主页](https://supermimic.github.io/)
-- [论文：arXiv:2610.28480](https://arxiv.org/abs/2610.28480)
-- 元数据依据：项目主页、论文首页与 arXiv 的“Accepted at CoRL 2026 (Oral)”说明；Oral 是报告形式，奖项未核实，暂不标注。
-
-最近核对：2026-10-28。
+  学习一个可微 world model 来共享不同动作中的人形机器人动力学，再通过短时想象轨迹的反向传播优化动作跟踪策略。world model 与策略交替更新，无需对原始物理仿真器求导；研究展示了大规模动作学习的计算效率，以及向真实 Unitree G1 的迁移。
